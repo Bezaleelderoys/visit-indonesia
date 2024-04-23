@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visit Indonesia : Nature's most beautiful</title>
+    <!-- Bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Seaweed+Script&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        max-width: 100%;
+        scroll-behavior: smooth;
+      }
+
+      .navbar {
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+        font-weight: 500;
+      }
+
+      .carousel-item {
+        height: 550px;
+      }
+
+      .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .footer h4 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .footer p {
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+      }
+
+      .footer .col-sm-3 {
+        margin-inline-end: 5px;
+      }
+
+      .subs {
+        margin-top: 10px;
+        height: 40px;
+        padding-left: 20px;
+        border-radius: 20px 0 0 20px;
+        outline: none;
+        border: none;
+        margin: 0;
+      }
+
+      .button {
+        height: 40px;
+        width: 40px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        background-color: white;
+        color: rgb(39, 153, 219);
+        font-weight: bold;
+        border-radius: 0 20px 20px 0;
+      }
+
+      .card {
+        border: none;
+        box-shadow: 4px 5px 34px -18px rgba(0, 0, 0, 0.75);
+      }
+
+      .card img {
+        object-fit: cover;
+        height: 500px;
+      }
+
+      .card-overlay {
+        width: 100%;
+        height: 69%;
+      }
+
+      .title-items {
+        background-color: white;
+        color: black;
+        border-radius: 100px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 700;
+        padding: 0 1px 0 1px;
+        margin: 0 5px 0 5px;
+      }
+
+      @media (max-width: 1200px) {
+        .title-container {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .title-container h1 {
+          margin-top: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg">
+      <div
+        class="container-sm d-flex justify-content-between align-items-center"
+      >
+        <a class="navbar-brand" href="#" style="color: white"
+          >visit<span
+            style="font-family: 'Seaweed Script', cursive; font-size: 32px"
+            >indonesia</span
+          >.com</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          style="background-color: rgba(255, 255, 255, 0.384)"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link mx-3"
+                aria-current="page"
+                href="#about"
+                style="color: white"
+                >About</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#products" style="color: white"
+                >Packages</a
+              >
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#article" style="color: white"
+                >Article</a
+              >
+            </li>
+            <li class="nav-item mx-3 dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                style="color: white"
+                >EN</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="overlay"></div>
+          <img
+            src="img/geio-tischler-7hww7t6NLcg-unsplash.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-md-block">
+            <h5 style="font-size: 60px; font-weight: 700">
+              Welcome To Indonesia
+            </h5>
+            <div class="row justify-content-center" style="gap: 3px">
+              <div class="col-xl-2 title-items">
+                <i class="bi bi-pin-angle me-2"></i> TOP 10 TOURS
+              </div>
+              <div class="col-xl-2 title-items">
+                <i class="bi bi-ticket-detailed me-2"></i> TICKET
+              </div>
+              <div class="col-xl-2 title-items">
+                <i class="bi bi-compass me-2"></i> COMPASS
+              </div>
+              <div class="col-xl-2 title-items">
+                <i class="bi bi-signpost-2 me-2"></i> PLACES TO GO
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header End -->
+
+    <!-- title start -->
+    <div class="container-fluid pt-5" id="about">
+      <div class="container-sm py-5">
+        <div class="row">
+          <div class="col-xl-6">
+            <div
+              style="
+                width: 100%;
+                max-width: 390px;
+                height: 390px;
+                border-radius: 50%;
+                overflow: hidden;
+              "
+            >
+              <img
+                src="img/filippo-cesarini-Ln0faF8O5E8-unsplash.jpg"
+                class="w-100 d-block title-image"
+              />
+            </div>
+          </div>
+          <div class="col-xl-6 mt-4 mt-xl-0">
+            <div class="title-box" style="max-width: 600px">
+              <h4 style="font-weight: 700">About Indonesia</h4>
+              <p>
+                Indonesia, a land of diverse landscapes and rich cultural
+                heritage, beckons travelers with its stunning array of
+                destinations. From the picturesque beaches of Bali to the rugged
+                terrain of Komodo National Park, there's something for every
+                adventurer to discover.
+              </p>
+              <p>
+                Immerse yourself in the island's vibrant arts scene in Ubud or
+                seek solace in the ancient temples of Tanah Lot and Uluwatu. For
+                a taste of prehistoric wonders, venture to Komodo National Park,
+                home to the famous Komodo dragons. Trek through rugged terrain,
+                dive among colorful coral reefs, and witness breathtaking
+                sunsets over the islands.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- title end -->
+
+    <!-- products start -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style="margin-bottom: -1px"
+    >
+      <path
+        fill="#2799DB"
+        fill-opacity="1"
+        d="M0,160L60,165.3C120,171,240,181,360,208C480,235,600,277,720,282.7C840,288,960,256,1080,234.7C1200,213,1320,203,1380,197.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+    <div
+      class="container-fluid py-5"
+      style="background-color: #2799db"
+      id="products"
+    >
+      <div class="container-sm my-5 py-5">
+        <h4 style="margin: 0 0 20px 0; font-weight: 700; color: white">
+          Most Popular Travel Packages
+        </h4>
+        <p style="color: white">
+          Take a look at our packages for the best experience in Indonesia's
+          nature
+        </p>
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <div class="col">
+            <div class="card position-relative">
+              <img src="img/sulawesi (1).jpg" class="card-img-top" alt="..." />
+              <div class="card-overlay position-absolute top-0 start-0 p-4">
+                <p class="text-white p-0 m-0" style="font-weight: 500">
+                  From $1000
+                </p>
+                <h5 class="card-title text-white p-0 m-0">Sulawesi</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text py-2 m-0" style="font-weight: 500">
+                  <i class="bi bi-calendar-week"></i> June July Aug Sept
+                </p>
+                <p class="card-text py-2 m-0" style="font-weight: 500">
+                  <i class="bi bi-airplane-fill text-dark"></i> Makassar Airport
+                </p>
+                <p class="card-text py-2 m-0" style="font-weight: 500">
+                  <i class="bi bi-border-width"></i> Manado
+                </p>
+                <p class="pt-4" style="font-size: 20px; font-weight: 600">
+                  Highlights
+                </p>
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="height: 200px">
+                      <img
+                        src="img/sulawesi (2).jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item" style="height: 200px">
+                      <img
+                        src="img/sulawesi (3).jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card position-relative">
+              <img
+                src="img/kalimantan (1).jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-overlay position-absolute top-0 start-0 p-4">
+                <p class="text-white p-0 m-0" style="font-weight: 500">
+                  From $1000
+                </p>
+                <h5 class="card-title text-white p-0 m-0">Kalimantan</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text py-2 m-0" style="font-weight: 500">
+                  <i class="bi bi-calendar-week"></i> June July Aug Sept
+                </p>
+                <p class="card-text py-2 m-0" style="font-weight: 500">
+                  <i class="bi bi-airplane-fill text-dark"></i> Balikpapan
+                  Airport
+                </p>
+                <p class="card-text py-2 m-0" style="font-weight: 500">
+                  <i class="bi bi-border-width"></i> Samarinda
+                </p>
+                <p class="pt-4" style="font-size: 20px; font-weight: 600">
+                  Highlights
+                </p>
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" style="height: 200px">
+                      <img
+                        src="img/kalimantan (2).jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item" style="height: 200px">
+                      <img
+                        src="img/kalimantan (3).jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#2799DB"
+        fill-opacity="1"
+        d="M0,192L40,181.3C80,171,160,149,240,138.7C320,128,400,128,480,117.3C560,107,640,85,720,106.7C800,128,880,192,960,202.7C1040,213,1120,171,1200,149.3C1280,128,1360,128,1400,128L1440,128L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- products end -->
+
+    <!-- article start -->
+    <div class="container-sm my-5" id="article">
+      <h4 style="font-weight: 700" class="mb-3">Latest Articles</h4>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <a href="" style="text-decoration: none">
+            <div class="card">
+              <img
+                src="img/harry-kessell-eE2trMn-6a0-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p>BALI</p>
+                <h5 class="card-title">Top 5 Destinations to Visit in Bali</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex align-items-center">
+                  <div
+                    style="
+                      width: 40px;
+                      height: 40px;
+                      border-radius: 50%;
+                      overflow: hidden;
+                    "
+                  >
+                    <img
+                      src="img/filippo-cesarini-Ln0faF8O5E8-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="ms-2">
+                    <p>Mark Steinitch</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" style="text-decoration: none">
+            <div class="card">
+              <img
+                src="img/david-clode-o-S8EiQVo_g-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p>NUSA TENGGARA TIMUR</p>
+                <h5 class="card-title">
+                  Why Komodo Island should be your next destination
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex align-items-center">
+                  <div
+                    style="
+                      width: 40px;
+                      height: 40px;
+                      border-radius: 50%;
+                      overflow: hidden;
+                    "
+                  >
+                    <img
+                      src="img/raissa-lara-lutolf-fasel-2mrb8RCUCxc-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="ms-2">
+                    <p>Jarot Buminang</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="" style="text-decoration: none">
+            <div class="card">
+              <img
+                src="img/raissa-lara-lutolf-fasel-2mrb8RCUCxc-unsplash.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p>EAST JAVA</p>
+                <h5 class="card-title">
+                  Surabaya, Lumajang, all the cities you need to visit
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="d-flex align-items-center">
+                  <div
+                    style="
+                      width: 40px;
+                      height: 40px;
+                      border-radius: 50%;
+                      overflow: hidden;
+                    "
+                  >
+                    <img
+                      src="img/filippo-cesarini-Ln0faF8O5E8-unsplash.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="ms-2">
+                    <p>Hendra Adi Setyo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- article end -->
+
+    <!-- footer start -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style="margin-bottom: -1px"
+    >
+      <path
+        fill="#2799DB"
+        fill-opacity="1"
+        d="M0,160L60,165.3C120,171,240,181,360,208C480,235,600,277,720,282.7C840,288,960,256,1080,234.7C1200,213,1320,203,1380,197.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+      ></path>
+    </svg>
+    <div
+      class="container-fluid footer"
+      style="background-color: rgb(39, 153, 219); color: white"
+    >
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4>About Us</h4>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum soluta repellendus quae deleniti laudantium.
+            </p>
+            <a class="navbar-brand" href="#" style="color: white"
+              >visit<span
+                style="font-family: 'Seaweed Script', cursive; font-size: 32px"
+                >indonesia</span
+              >.com</a
+            >
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4>Contact Info</h4>
+            <p class="mb-2">Address : Newlandia 12 ST.</p>
+            <p class="mb-2">Phone : +88 9988 9921</p>
+            <p class="mb-2">info@domain.com</p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 d-flex flex-column">
+            <h4>Links</h4>
+            <a class="mb-2" style="color: white; text-decoration: none" href=""
+              >About</a
+            >
+            <a class="mb-2" style="color: white; text-decoration: none" href=""
+              >Products</a
+            >
+            <a class="mb-2" style="color: white; text-decoration: none" href=""
+              >Article</a
+            >
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h4>Newsletter</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Molestiae, quibusdam.
+            </p>
+            <input
+              type="text"
+              placeholder="Email address"
+              class="subs mt-3"
+              style="width: 200px"
+            />
+            <button class="button"><i class="bi bi-send"></i></button>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            Copyright 2024 All Rights reserved
+          </div>
+          <div
+            class="col-lg-6 col-md-6 col-sm-6 text-lg-end text-md-end text-sm-end"
+          >
+            <i
+              style="font-size: 20px; margin-right: 5px"
+              class="bi bi-linkedin"
+            ></i>
+            <i
+              style="font-size: 20px; margin-right: 5px"
+              class="bi bi-facebook"
+            ></i>
+            <i style="font-size: 20px" class="bi bi-google"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer end -->
+
+    <!-- js scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-L5QtGdpeSfH+fSqFhiRsySGCVUuWyDqWtIk0vrjOmg4jz1zNcPgjz9PI3y7ofWlj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
